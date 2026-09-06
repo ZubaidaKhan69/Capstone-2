@@ -1,65 +1,174 @@
-/* Basic styles with errors and omissions */
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2b6cb0;
+    --accent-color: #d69e2e;
+    --bg-color: #f7fafc;
+    --surface-color: #ffffff;
+    --text-color: #2d3748;
+    --border-color: #e2e8f0;
+    --font-family: Arial, Helvetica, sans-serif;
+}
 
-body {
-    font-family: Arial;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #333;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
 }
 
-.header {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    /* Missing: proper alignment */
+header {
+    background-color: var(--primary-color);
+    padding: 1.5rem 2rem;
 }
 
-.header h1 {
-    margin: 0;
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
 }
 
-/* Navigation styling missing completely */
-
-.hero {
-    padding: 50px;
-    background-color: lightblue;
-    /* Poor colour contrast */
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
 }
 
-.hero h2 {
-    font-size: 36px;
+nav ul li a:hover,
+nav ul li a:focus {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    outline: none;
 }
 
-.hero img {
+nav ul li a.active {
+    border-bottom: 2px solid #ffffff;
+}
+
+#main-content {
+    padding: 0 1.5rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+section {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
     width: 100%;
-    /* Missing: alt text handled in HTML, but sizing issues here */
 }
 
-/* Missing: Only using 2-3 selector types, need 5+ */
-/* Missing: Pseudo-classes not used */
-/* Missing: Combination selectors not used */
-
-.intro {
-    padding: 30px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
 }
 
-/* Form styling incomplete */
-form input {
-    display: block;
-    margin: 10px 0;
-}
-
-/* Missing: Box model demonstration (margin, padding, border) */
-/* Missing: Block vs inline elements styling */
-/* Missing: Text and colour styling variety */
-/* Missing: Table styling */
-
-.footer {
-    background-color: gray;
-    color: white;
-    padding: 20px;
-    /* Wrong alignment */
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1rem;
     text-align: left;
 }
 
-/* Code quality issues: inconsistent spacing, poor naming, no comments */
+th {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edf2f7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 600px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--secondary-color);
+    outline: 2px solid var(--secondary-color);
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+button [type="submit"] {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+    align-self: flex-start;
+    font-weight: 600;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+}
