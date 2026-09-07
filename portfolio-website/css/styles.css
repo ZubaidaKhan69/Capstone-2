@@ -1,3 +1,5 @@
+/*Global resets and variables*/
+
 :root {
     --primary-color: #1a365d;
     --secondary-color: #2b6cb0;
@@ -21,6 +23,7 @@ body {
     line-height: 1.6;
 }
 
+/*Header and navigation styles*/
 header {
     background-color: var(--primary-color);
     padding: 1.5rem 2rem;
@@ -44,6 +47,7 @@ nav ul li a {
     transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
 }
 
+/*Interactive Pseudo-classes*/
 nav ul li a:hover,
 nav ul li a:focus {
     color: var(--accent-color);
@@ -55,6 +59,7 @@ nav ul li a.active {
     border-bottom: 2px solid #ffffff;
 }
 
+/*Layout and container styles*/
 #main-content {
     padding: 0 1.5rem;
     max-width: 1100px;
@@ -78,6 +83,7 @@ p {
     margin-bottom: 1rem;
 }
 
+/*Responsive image handling*/
 section img {
     max-width: 100%;
     height: auto;
@@ -85,6 +91,7 @@ section img {
     width: 100%;
 }
 
+/*Data table styling*/
 table {
     width: 100%;
     border-collapse: collapse;
@@ -106,6 +113,7 @@ tbody tr:nth-child(even) {
     background-color: #edf2f7;
 }
 
+/*Accessible form styling*/
 form {
     display: flex;
     flex-direction: column;
@@ -135,6 +143,7 @@ textarea {
     font-family: inherit;
 }
 
+/*Focus states for form fields*/
 input:focus,
 select:focus,
 textarea:focus {
@@ -170,6 +179,7 @@ button[type="submit"]:focus {
     background-color: var(--secondary-color);
 }
 
+/*Footer styling*/
 footer {
     background-color: var(--primary-color);
     color: #ffffff;
