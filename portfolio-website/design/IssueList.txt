@@ -1,0 +1,18 @@
+===================================================================
+ISSUES IDENTIFICATION & REMEDIATION REPORT (DEVELOPER PORTFOLIO)
+===================================================================
+
+1. HTML STRUCTURE & SEMANTICS ISSUES:
+   - Non-Semantic Div Overuse: Starter code relied strictly on generic <div> tags for page structure. Replaced entirely with HTML5 landmarks (<header>, <nav>, <main>, <section>, <footer>) across all 4 pages.
+   - Missing Headings & Metadata: Added proper viewport meta tags and uniform page titles across index, about, projects, and contact pages.
+   - Missing Image Text Alternatives: Added descriptive alt text for all 5 featured project and hero images to satisfy accessibility standards.
+   - Omitted Skill Table: Designed a structured skills matrix using <table>, <thead>, <tbody>, and scope="col" header bindings.
+
+2. ACCESSIBILITY & FORM DEFICIENCIES:
+   - Form Inputs Lacking Bound Labels: Bound all form controls with explicit <label for="..."> attributes matching input IDs.
+   - Input Variety & Client Validation: Upgraded contact form to feature 5 unique input controls (text, email, select, radio group, textarea) enforced with required, minlength, and HTML5 validation rules.
+
+3. CSS STYLING & BOX MODEL ERRORS:
+   - Restricted Selectors: Expanded CSS rules from basic elements to include Element, Class, ID (#main-content), Descendant (nav ul li), and Pseudo-classes (:hover, :focus, :nth-child).
+   - WCAG AAA Contrast Compliance: Fixed poor starter text/background contrast. Built a palette around deep navy (#1a365d) and slate gray (#2d3748) against off-white (#f7fafc).
+   - Visual Focus States: Added focus outlines and active border indicators on all interactive links and buttons.
