@@ -1,36 +1,32 @@
-# Portfolio Website Starter Code
+# Developer Portfolio Website
 
-This is the starter codebase for your portfolio website project. The code is approximately 70% complete but contains errors, omissions, and areas that need improvement.
+A clean, responsive, and WCAG-accessible multi-page portfolio website showcasing my front-end web development projects, skills matrix, and contact form.
 
-## What's Included
+## Overview
+This repository contains a refactored and complete implementation built with semantic HTML5 and CSS3. The platform highlights my core projects—such as the **Little Lemon React Capstone Web App**—while demonstrating mastery of accessible design, responsive grid layouts, and zero-error W3C standard code.
 
-- `index.html` - Home page (incomplete)
-- `about.html` - About page (incomplete)
-- `projects.html` - Projects page (incomplete)
-- `contact.html` - Contact page (incomplete)
-- `css/styles.css` - Stylesheet (incomplete and with errors)
-- `images/` folder - Placeholder folder for your images
+---
 
-## Your Task
+## Major Issues Identified & Fixes Implemented
 
-Review the provided code carefully and:
-1. Identify and fix all errors
-2. Complete all missing requirements
-3. Improve the code quality
-4. Test your website thoroughly
+* **Landmark Refactoring:** Eliminated non-semantic `<div>` clutter by implementing `<header>`, `<nav>`, `<main>`, `<section>`, and `<footer>` elements across all 4 pages.
+* **Unified Navigation:** Implemented a robust 16-link navigation architecture (4 links per page) featuring interactive hover and focus visual feedback.
+* **Accessible Contact Form:** Constructed a contact form using 5 distinct input controls (`text`, `email`, `select`, `radio`, `textarea`) bound to explicit `<label>` tags with client-side HTML5 validation.
+* **Data Presentation:** Designed a skill matrix table on `about.html` featuring custom zebra-striping via CSS pseudo-class selectors.
+* **Color Contrast:** Selected WCAG AAA compliant text and surface colors, ensuring contrast ratios exceed 4.5:1.
 
-## Getting Started
+---
 
-1. Review all HTML and CSS files
-2. Run your HTML through the W3C Validator
-3. Run your CSS through the W3C CSS Validator
-4. Test your website in multiple browsers
-5. Fix issues and complete missing elements
+## Technical Features & CSS Approach
 
-## Notes
+* **Selector Variety:** Utilizes Element, Class, ID (`#main-content`), Descendant (`nav ul li`), and Pseudo-class (`:hover`, `:focus`, `:nth-child`) selectors.
+* **Box Model Discipline:** Strict box-model management using `margin`, `padding`, `border`, and `box-sizing: border-box`.
+* **Zero W3C Validation Errors:** Fully verified against the W3C HTML5 and W3C CSS Validation Services.
 
-- You will need to add your own images to the `images/` folder
-- The starter code intentionally has issues for you to discover and fix
-- Refer to the project requirements document for all specifications
+---
 
-Good luck!
+## Local Viewing Instructions
+
+1. Clone this repository locally:
+   ```bash
+   git clone [https://github.com/ZubaidaKhan69/Capstone-2.git](https://github.com/ZubaidaKhan69/Capstone-2.git)
