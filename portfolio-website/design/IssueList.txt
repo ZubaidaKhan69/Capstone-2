@@ -1,18 +1,133 @@
-===================================================================
-ISSUES IDENTIFICATION & REMEDIATION REPORT (DEVELOPER PORTFOLIO)
-===================================================================
+Developer Portfolio Website
+1. HTML Structure & Semantic Issues
 
-1. HTML STRUCTURE & SEMANTICS ISSUES:
-   - Non-Semantic Div Overuse: Starter code relied strictly on generic <div> tags for page structure. Replaced entirely with HTML5 landmarks (<header>, <nav>, <main>, <section>, <footer>) across all 4 pages.
-   - Missing Headings & Metadata: Added proper viewport meta tags and uniform page titles across index, about, projects, and contact pages.
-   - Missing Image Text Alternatives: Added descriptive alt text for all 5 featured project and hero images to satisfy accessibility standards.
-   - Omitted Skill Table: Designed a structured skills matrix using <table>, <thead>, <tbody>, and scope="col" header bindings.
+Issue 1: Non-semantic div overuse
 
-2. ACCESSIBILITY & FORM DEFICIENCIES:
-   - Form Inputs Lacking Bound Labels: Bound all form controls with explicit <label for="..."> attributes matching input IDs.
-   - Input Variety & Client Validation: Upgraded contact form to feature 5 unique input controls (text, email, select, radio group, textarea) enforced with required, minlength, and HTML5 validation rules.
+The starter code relied heavily on generic <div> elements for page structure.
+Replaced with semantic HTML5 elements including <header>, <nav>, <main>, <section>, and <footer>.
 
-3. CSS STYLING & BOX MODEL ERRORS:
-   - Restricted Selectors: Expanded CSS rules from basic elements to include Element, Class, ID (#main-content), Descendant (nav ul li), and Pseudo-classes (:hover, :focus, :nth-child).
-   - WCAG AAA Contrast Compliance: Fixed poor starter text/background contrast. Built a palette around deep navy (#1a365d) and slate gray (#2d3748) against off-white (#f7fafc).
-   - Visual Focus States: Added focus outlines and active border indicators on all interactive links and buttons.
+Issue 2: Missing navigation menu
+
+The homepage lacked a navigation menu.
+Added consistent navigation across all four pages.
+
+Issue 3: Missing viewport meta tag
+
+Pages were missing responsive viewport settings.
+Added <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+
+Issue 4: Inconsistent page titles
+
+Page titles lacked consistency.
+Standardized titles across all pages.
+
+Issue 5: Missing active page indication
+
+Navigation offered no visual indication of the current page.
+Added active link styling and aria-current="page".
+
+Issue 6: Missing image alternative text
+
+Images lacked descriptive alt text.
+Added meaningful alternative text to all images.
+
+Issue 7: Invalid HTML structure
+
+Contact page contained unclosed navigation and form-related elements.
+Corrected all structural and nesting issues.
+2. Images, Tables & Content Issues
+
+Issue 8: Missing skills table
+
+The About page lacked the required table.
+Added a complete Technical Skills Matrix table.
+
+Issue 9: Missing table accessibility features
+
+Table lacked caption and accessible column identification.
+Added a table caption and scope="col" attributes.
+
+Issue 10: Missing project content
+
+The starter code was missing a third project.
+Added a third featured project section.
+
+Issue 11: Generic image descriptions
+
+Project images had non-descriptive text.
+Replaced generic descriptions with detailed alt text.
+3. Form & Accessibility Issues
+
+Issue 12: Missing input labels
+
+Form controls did not have associated labels.
+Added explicit labels linked to form controls using for and id.
+
+Issue 13: Insufficient input variety
+
+Form contained only a few basic controls.
+Added text, email, telephone, select, radio button, and textarea controls.
+
+Issue 14: Missing validation
+
+Form lacked client-side validation.
+Added required, minlength, and pattern attributes.
+
+Issue 15: Missing fieldset and legend
+
+Radio buttons were not grouped semantically.
+Added <fieldset> and <legend> elements.
+
+Issue 16: Poor keyboard accessibility
+
+Interactive elements lacked focus styles.
+Added visible keyboard focus indicators.
+4. CSS & Layout Issues
+
+Issue 17: Limited selector variety
+
+The starter stylesheet used very few selector types.
+Expanded to element, class, ID, descendant, and pseudo-class selectors.
+
+Issue 18: Missing navigation styling
+
+Navigation links were unstyled.
+Added navigation layout, spacing, hover states, and active states.
+
+Issue 19: Poor colour contrast
+
+Text and background combinations presented accessibility concerns.
+Replaced with a WCAG-compliant colour palette.
+
+Issue 20: Missing table styling
+
+Table lacked borders, spacing, and row differentiation.
+Added borders, padding, captions, and zebra striping.
+
+Issue 21: Incomplete form styling
+
+Form controls lacked hierarchy and spacing.
+Added structured styling and consistent spacing.
+
+Issue 22: Limited box model implementation
+
+Margin, padding, and border usage were minimal.
+Expanded box model usage throughout the site.
+
+Issue 23: Footer alignment issue
+
+Footer content was not visually balanced.
+Applied centered alignment and improved spacing.
+
+Issue 24: Missing responsive layout support
+
+Layout lacked mobile-friendly behaviour.
+Added responsive media queries for smaller screens.
+
+Issue 25: Missing hover and focus interactions
+
+Interactive elements lacked visual feedback.
+Added hover, focus, and transition effects.
+Summary
+
+A total of 25 issues were identified and corrected across the starter codebase. Improvements focused on semantic HTML, accessibility, navigation, tables, forms, CSS styling, responsive design, validation compliance, and overall code quality. The completed website now meets the capstone requirements through the implementation of accessible HTML5 structure, responsive layouts, improved visual design, and enhanced usability.
