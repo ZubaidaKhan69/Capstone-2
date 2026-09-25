@@ -26,45 +26,46 @@
         </section>
         
         <form action="#" method="post">
-            <div class="form-group">
-                <label for="full-name">Your Full Name:</label>
+            <label class="form-group" for="full-name">
+                Your Full Name:
                 <input type="text" id="full-name" name="fullName" required minlength="2" placeholder="John Doe">
-            </div>
+            </label>
 
-            <div class="form-group">
-                <label for="email-address">Your Email Address:</label>
+            <label class="form-group" for="email-address">
+                Your Email Address:
                 <input type="email" id="email-address" name="email" required placeholder="example@example.com">
-            </div>
+            </label>
 
-            <div class="form-group">
-                <label for="phone-number">Your Phone Number:</label>
+            <label class="form-group" for="phone-number">
+                Your Phone Number:
                 <input type="tel" id="phone-number" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" title="Please enter your phone number in the format 123-456-7890">
+            </label>
 
-            <div class="form-group">
-                <label for="inquiry-type">Inquiry Reason:</label>
+            <label class="form-group" for="inquiry-type">
+                Inquiry Reason:
                 <select id="inquiry-type" name="inquiryType" required>
                     <option value="">-- Select an option --</option>
                     <option value="general">General Inquiry</option>
                     <option value="feedback">Freelance Web Project</option>
                     <option value="collaboration">Job Opportunity</option>
                 </select>
-            </div>
+            </label>
 
                 <fieldset class="form-group">
                     <legend>Preferred Contact Method:</legend>
-                    <div class="radio-group">
+                    <span class="radio-group">
                         <input type="radio" id="pref-email" name="preferredContact" value="email" checked>
                         <label for="pref-email">Email</label>
 
                         <input type="radio" id="pref-phone" name="preferredContact" value="phone">
                         <label for="pref-phone">Phone</label>
-                    </div>
+                    </span>
                 </fieldset>
 
-            <div class="form-group">
-                <label for="message">Your Message:</label>
+            <label class="form-group" for="message">
+                Your Message:
                 <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Enter your message"></textarea>
-                </div>
+            </label>
 
             <button type="submit">Send Message</button>
         </form>
