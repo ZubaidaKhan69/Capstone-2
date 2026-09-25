@@ -119,6 +119,7 @@ form {
     flex-direction: column;
     gap: 1.25rem;
     max-width: 600px;
+    margin: 0 auto;
 }
 
 .form-group {
@@ -213,7 +214,7 @@ footer {
         gap: 1rem;
         align-items: center;
     }
-    
+
     section {
         padding: 1rem;
     }
