@@ -125,6 +125,26 @@ form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+fieldset.form-group {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+legend {
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+caption {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    text-align: left;
 }
 
 label {
